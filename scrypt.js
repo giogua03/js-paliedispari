@@ -9,6 +9,7 @@
 //Sommiamo i due numeri
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 //Dichiariamo chi ha vinto.
+
 let userParola = prompt('dammi una parola');
 let eleInvertita = palindroma(userParola) 
 
@@ -23,12 +24,8 @@ function palindroma(controllo){
     let invLettere = divLettere.reverse("")
     let parolaCont = invLettere.join("")
     return parolaCont
-    
-
 }
-
-
-
+ 
 
 
 
