@@ -9,13 +9,27 @@
 //Sommiamo i due numeri
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 //Dichiariamo chi ha vinto.
-const userParola = prompt('dammi una parola');
-const arrParola= [""];
-arrParola.push = userParola
-if (arrParola.reverse = userParola){
+let userParola = prompt('dammi una parola');
+let eleInvertita = palindroma(userParola) 
+
+if (userParola == eleInvertita){
     alert('Parola Palindroma');
-} else {
+   }else {
     alert('Parola NON Palindroma');
 }
+
+function palindroma(controllo){
+    let divLettere = controllo.split("")
+    let invLettere = divLettere.reverse("")
+    let parolaCont = invLettere.join("")
+    return parolaCont
+    
+
+}
+
+
+
+
+
 
 
