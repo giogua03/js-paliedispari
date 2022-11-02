@@ -25,6 +25,39 @@ function palindroma(controllo){
     let parolaCont = invLettere.join("")
     return parolaCont
 }
+
+
+alert('INIZIA IL GIOCO')
+let eleDipari = prompt('SCEGLIERE TRA PARI O DISPARI')
+console.log(eleDipari)
+let eleNumero = prompt('INSERISCI UN NUMERO')
+console.log(eleNumero)
+let eleRandom = parseInt(Math.floor(Math.random() * 5 ) + 1)
+console.log(eleRandom)
+
+function somma(a,b){
+    let sommaNumero = a + b
+    if (sommaNumero % 2 === 0 ){
+        return 'pari'
+    }else{
+        return'dispari'
+    }
+
+}
+let risultato = somma(eleNumero,eleRandom);
+alert(risultato)
+console.log(risultato)
+
+function vittoria(c,d){
+    if(c = d){
+        return'ha vinto utente'
+    }else{
+        return'ha vinto PC'
+    }
+}
+let risultato2 = vittoria(eleNumero,risultato)
+alert(risultato2)
+console.log(risultato2)
  
 
 
