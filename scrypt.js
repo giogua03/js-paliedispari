@@ -30,13 +30,14 @@ function palindroma(controllo){
 alert('INIZIA IL GIOCO')
 let eleDipari = prompt('SCEGLIERE TRA PARI O DISPARI')
 console.log(eleDipari)
-let eleNumero = prompt('INSERISCI UN NUMERO')
+let eleNumero = parseInt(prompt('INSERISCI UN NUMERO'))
 console.log(eleNumero)
 let eleRandom = parseInt(Math.floor(Math.random() * 5 ) + 1)
-console.log(eleRandom)
+console.log('numero pc '+ eleRandom)
 
 function somma(a,b){
-    let sommaNumero = a + b
+    let sommaNumero = (a + b)
+    console.log(sommaNumero)
     if (sommaNumero % 2 === 0 ){
         return 'pari'
     }else{
@@ -49,13 +50,13 @@ alert(risultato)
 console.log(risultato)
 
 function vittoria(c,d){
-    if(c = d){
+    if(c == d){
         return'ha vinto utente'
     }else{
         return'ha vinto PC'
     }
 }
-let risultato2 = vittoria(eleNumero,risultato)
+let risultato2 = vittoria(eleDipari,risultato)
 alert(risultato2)
 console.log(risultato2)
  
